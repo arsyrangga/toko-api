@@ -1,0 +1,43 @@
+###
+
+POST  http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "username" : "ranggax",
+    "password" : "rangga105"
+}
+
+# get all data
+
+###
+GET http://localhost:8000/api/data-login
+Content-Type: application/json
+
+# get satu data
+
+### 
+GET http://localhost:8000/api/data-login/rangga
+Content-Type: application/json
+
+
+###
+POST  http://localhost:8000/api/login-admin/admin
+Content-Type: application/json
+
+{
+    "username" : "admin",
+    "password" : "administrator"
+}
+
+# get all data
+
+###
+GET http://localhost:8000/api/data-login-admin
+Content-Type: application/json
+
+# get satu data
+
+### 
+GET http://localhost:8000/api/data-login-admin/admin
+Content-Type: application/json
