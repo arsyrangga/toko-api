@@ -19,4 +19,8 @@ sequelize
 app.use("/api", login);
 app.use("/api", loginAdmin);
 
-app.listen(80, () => console.log("Terkonek di port " + PORT));
+app.get("/", (req, res) => {
+  res.send("teh");
+});
+
+app.listen(PORT || 80, () => console.log("Terkonek di port " + PORT));
