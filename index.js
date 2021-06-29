@@ -19,4 +19,4 @@ sequelize
 app.use("/api", login);
 app.use("/api", loginAdmin);
 
-app.listen(443, () => console.log("Terkonek di port " + PORT));
+app.listen(80, () => console.log("Terkonek di port " + PORT));
