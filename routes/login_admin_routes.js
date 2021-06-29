@@ -13,7 +13,7 @@ loginAdmin.post("/login-admin", (req, res) => {
 
 loginAdmin.get("/data-login-admin/:username", (req, res) => {
   const username = req.params.username;
-  LoginAdmin.findAll({
+  LoginAdmin.findOne({
     where: { username: username },
     attributes: ["username", "password"],
   })

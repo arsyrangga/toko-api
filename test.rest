@@ -22,12 +22,12 @@ Content-Type: application/json
 
 
 ###
-POST  http://localhost:8000/api/login-admin/admin
+POST  http://localhost:8000/api/login-admin
 Content-Type: application/json
 
 {
-    "username" : "admin",
-    "password" : "administrator"
+    "username" : "admins",
+    "password" : "administrators"
 }
 
 # get all data
@@ -39,5 +39,5 @@ Content-Type: application/json
 # get satu data
 
 ### 
-GET http://localhost:8000/api/data-login-admin/admin
+GET http://localhost:8000/api/data-login-admin/admins
 Content-Type: application/json

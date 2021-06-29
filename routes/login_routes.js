@@ -13,7 +13,7 @@ login.post("/login", (req, res) => {
 
 login.get("/data-login/:username", (req, res) => {
   const username = req.params.username;
-  Login.findAll({
+  Login.findOne({
     where: { username: username },
     attributes: ["username", "password"],
   })
