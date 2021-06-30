@@ -1,5 +1,5 @@
+# post data login karyawan
 ###
-
 POST  http://localhost:8000/api/login
 Content-Type: application/json
 
@@ -8,19 +8,20 @@ Content-Type: application/json
     "password" : "rangga105"
 }
 
-# get all data
+# get all data Login
 
 ###
 GET http://localhost:8000/api/data-login
 Content-Type: application/json
 
-# get satu data
+# get satu data Login
 
 ### 
 GET http://localhost:8000/api/data-login/rangga
 Content-Type: application/json
 
 
+#post data admin
 ###
 POST  http://localhost:8000/api/login-admin
 Content-Type: application/json
@@ -30,13 +31,13 @@ Content-Type: application/json
     "password" : "administrators"
 }
 
-# get all data
+# get all data admin
 
 ###
 GET http://localhost:8000/api/data-login-admin
 Content-Type: application/json
 
-# get satu data
+# get satu data admin
 
 ### 
 GET http://localhost:8000/api/data-login-admin/admins

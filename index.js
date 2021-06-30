@@ -3,6 +3,7 @@ const cors = require("cors");
 const sequelize = require("./models/connection");
 const login = require("./routes/login_routes");
 const loginAdmin = require("./routes/login_admin_routes");
+const dataBarang = require("./routes/data_barang_routes");
 const app = express();
 require("dotenv").config();
 const PORT = process.env.PORT;
@@ -18,6 +19,7 @@ sequelize
 
 app.use("/api", login);
 app.use("/api", loginAdmin);
+app.use("api", dataBarang);
 
 app.get("/", (req, res) => {
   res.send("teh");
