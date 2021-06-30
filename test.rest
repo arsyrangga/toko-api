@@ -42,3 +42,15 @@ Content-Type: application/json
 ### 
 GET http://localhost:8000/api/data-login-admin/admins
 Content-Type: application/json
+
+POST http://toko-barokah.herokuapp.com/api/data-barang-post
+Content-Type: application/json
+
+{
+    "code" : "x25",
+    "nama" : "Yonex Archsaber 10",
+    "kategori" : "raket",
+    "harga" : 300000,
+    "stock" : 60
+
+}

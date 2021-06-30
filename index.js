@@ -19,7 +19,7 @@ sequelize
 
 app.use("/api", login);
 app.use("/api", loginAdmin);
-app.use("api", dataBarang);
+app.use("/api", dataBarang);
 
 app.get("/", (req, res) => {
   res.send("teh");
