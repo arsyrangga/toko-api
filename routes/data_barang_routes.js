@@ -21,7 +21,7 @@ dataBarang.post("/data-barang-post", (req, res) => {
 // Hapus Barang
 dataBarang.delete("/data-barang-delete/:id", (req, res) => {
   const id = req.params.id;
-  DataBarang.findOne({
+  DataBarang.destroy({
     where: { id: id },
   })
     .then((result) => res.status(200).json(result))
