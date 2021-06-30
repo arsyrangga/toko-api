@@ -43,6 +43,10 @@ Content-Type: application/json
 GET http://localhost:8000/api/data-login-admin/admins
 Content-Type: application/json
 
+
+
+GET http://toko-barokah.herokuapp.com/api/data-barang
+###
 POST http://toko-barokah.herokuapp.com/api/data-barang-post
 Content-Type: application/json
 
