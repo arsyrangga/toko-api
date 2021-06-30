@@ -5,7 +5,9 @@ const dataBarang = express.Router();
 
 // manampilkan semua data barang
 dataBarang.get("/data-barang", (req, res) => {
-  DataBarang.findAll()
+  DataBarang.findAll({
+    order: ["id", "desc"],
+  })
     .then((result) => res.status(200).json(result))
     .catch((err) => res.status(500).json(err));
 });

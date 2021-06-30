@@ -63,3 +63,17 @@ Content-Type: application/json
 ###
 DELETE http://toko-barokah.herokuapp.com/api/data-barang-delete/3
 Content-Type: application/json
+
+# edit barang
+###
+PUT http://toko-barokah.herokuapp.com/api/data-barang-edit/3
+Content-Type: application/json
+
+{
+    "code" : "x25s",
+    "nama" : "Yonex Archsaber 11s",
+    "kategori" : "rakest",
+    "harga" : 3000020,
+    "stock" : 620
+
+}
