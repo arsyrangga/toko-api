@@ -51,7 +51,7 @@ POST http://toko-barokah.herokuapp.com/api/data-barang-post
 Content-Type: application/json
 
 {
-    "code" : "x25",
+    "code" : "x29",
     "nama" : "Yonex Archsaber 11",
     "kategori" : "raket",
     "harga" : 300000,
