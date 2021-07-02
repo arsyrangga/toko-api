@@ -5,7 +5,9 @@ Content-Type: application/json
 
 {
     "username" : "ranggax",
-    "password" : "rangga105"
+    "password" : "rangga105",
+    "nama" : "Ranggarsy",
+    "status" : "Tidak Aktif"
 }
 
 # get all data Login
@@ -18,6 +20,12 @@ Content-Type: application/json
 
 ### 
 GET http://localhost:8000/api/data-login/rangga
+Content-Type: application/json
+
+#Delete data login 
+
+###
+DELETE http://localhost:8000/api/data-login-delete/3
 Content-Type: application/json
 
 
@@ -51,7 +59,7 @@ POST http://toko-barokah.herokuapp.com/api/data-barang-post
 Content-Type: application/json
 
 {
-    "code" : "x29",
+    "code" : "x31",
     "nama" : "Yonex Archsaber 11",
     "kategori" : "raket",
     "harga" : 300000,

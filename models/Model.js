@@ -23,6 +23,26 @@ const Login = sequelize.define("login", {
       },
     },
   },
+  nama: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    validate: {
+      len: {
+        args: [2, 100],
+        msg: "masukkan nama yang benar",
+      },
+    },
+  },
+  status: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    validate: {
+      len: {
+        args: [2, 25],
+        msg: "masukkan status yang benar",
+      },
+    },
+  },
 });
 
 const LoginAdmin = sequelize.define("login-admin", {
