@@ -35,8 +35,8 @@ POST  http://localhost:8000/api/login-admin
 Content-Type: application/json
 
 {
-    "username" : "admins",
-    "password" : "administrators"
+    "username" : "admin",
+    "password" : "administrator"
 }
 
 # get all data admin

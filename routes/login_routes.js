@@ -36,4 +36,19 @@ login.delete("/data-login-delete/:id", (req, res) => {
     .catch((err) => res.status(500).json(err));
 });
 
+login.put("/data-login-edit/:id", (req, res) => {
+  const id = req.params.id;
+  Login.update(
+    {
+      username: req.body.username,
+      password: req.body.password,
+      nama: req.body.nama,
+      status: req.body.status,
+    },
+    { where: { id: id } }
+  )
+    .then((result) => res.status(200).json(result))
+    .catch((err) => res.status(404).json(err));
+});
+
 module.exports = login;
