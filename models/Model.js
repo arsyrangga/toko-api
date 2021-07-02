@@ -124,31 +124,37 @@ const DataBarang = sequelize.define("data-barang", {
 
 const DataReturn = sequelize.define("data-return", {
   code: {
-    DataTypes: DataTypes.STRING,
+    type: DataTypes.STRING,
     allowNull: false,
+    validate: {
+      len: {
+        args: [1, 100],
+        msg: "masukkan data yang benar",
+      },
+    },
   },
   tanggal: {
-    DataTypes: DataTypes.DATEONLY,
+    type: DataTypes.DATE,
     allowNull: false,
   },
   nama: {
-    DataTypes: DataTypes.STRING,
+    type: DataTypes.STRING,
     allowNull: false,
   },
   kategori: {
-    DataTypes: DataTypes.STRING,
+    type: DataTypes.STRING,
     allowNull: false,
   },
   merk: {
-    DataTypes: DataTypes.STRING,
+    type: DataTypes.STRING,
     allowNull: false,
   },
   harga: {
-    DataTypes: DataTypes.INTEGER,
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
   stock: {
-    DataTypes: DataTypes.INTEGER,
+    type: DataTypes.INTEGER,
     allowNull: false,
   },
 });
