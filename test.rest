@@ -13,7 +13,7 @@ Content-Type: application/json
 # get all data Login
 
 ###
-GET http://localhost:8000/api/data-login
+GET http://toko-barokah.herokuapp.com/api/data-login
 Content-Type: application/json
 
 # get satu data Login
