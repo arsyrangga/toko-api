@@ -134,7 +134,7 @@ const DataReturn = sequelize.define("data-return", {
     },
   },
   tanggal: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: false,
   },
   nama: {

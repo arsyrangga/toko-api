@@ -1,10 +1,21 @@
 # post data login karyawan
 ###
-POST  http://localhost:8000/api/login
+POST http://localhost:8000/api/login
 Content-Type: application/json
 
 {
-    "username" : "ranggax",
+    "username" : "siti",
+    "password" : "fauziah",
+    "nama" : "Siti Fauziah Indriani",
+    "status" : "Aktif"
+}
+
+###
+PUT http://toko-barokah.herokuapp.com/api/data-login-edit/4
+Content-Type: application/json
+
+{
+    "username" : "ranggaihx",
     "password" : "rangga105",
     "nama" : "Ranggarsy",
     "status" : "Tidak Aktif"
