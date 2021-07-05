@@ -186,4 +186,38 @@ const DataMasuk = sequelize.define("/data-masuk", {
   },
 });
 
-module.exports = { Login, LoginAdmin, DataBarang, DataReturn, DataMasuk };
+const DataKeluar = sequelize.define("/data-keluar", {
+  code: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  tanggal: {
+    type: DataTypes.DATEONLY,
+    allowNull: false,
+  },
+  kategori: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  merk: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  harga: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  stock: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+});
+
+module.exports = {
+  Login,
+  LoginAdmin,
+  DataBarang,
+  DataReturn,
+  DataMasuk,
+  DataKeluar,
+};

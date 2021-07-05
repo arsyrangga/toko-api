@@ -3,7 +3,7 @@ GET http://toko-barokah.herokuapp.com/api/data-masuk
 Content-Type: application/json
 
 ###
-POST http://http://toko-barokah.herokuapp.com/api/data-masuk-post
+POST http://toko-barokah.herokuapp.com/api/data-masuk-post
 Content-Type: application/json
 
 {
@@ -18,12 +18,12 @@ Content-Type: application/json
 }
 
 ###
-PUT http://toko-barokah.herokuapp.com/api/data-return-edit/1
+PUT http://toko-barokah.herokuapp.com/api/data-masuk-edit/1
 Content-Type: application/json
 
 {
     "code" : "x31",
-    "tanggal" : "11/09/2002",
+    "tanggal" : "11/09/2007",
     "nama" : "Yonex Archsaber 11",
     "kategori" : "rakets",
     "merk" : "Beat Sabers",

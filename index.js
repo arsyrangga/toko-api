@@ -6,6 +6,7 @@ const loginAdmin = require("./routes/login_admin_routes");
 const dataBarang = require("./routes/data_barang_routes");
 const dataReturn = require("./routes/data_return_routes");
 const dataMasuk = require("./routes/data_masuk_routes");
+const dataKeluar = require("./routes/data_keluar_routes");
 const app = express();
 require("dotenv").config();
 const PORT = process.env.PORT;
@@ -24,6 +25,7 @@ app.use("/api", loginAdmin);
 app.use("/api", dataBarang);
 app.use("/api", dataReturn);
 app.use("/api", dataMasuk);
+app.use("/api", dataKeluar);
 
 app.get("/", (req, res) => {
   res.send("teh");
