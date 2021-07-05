@@ -33,7 +33,7 @@ dataReturn.put("/data-return-edit/:id", (req, res) => {
       tanggal: req.body.tanggal,
       nama: req.body.nama,
       kategori: req.body.kategori,
-      merk: req.body.kategori,
+      merk: req.body.merk,
       harga: req.body.harga,
       stock: req.body.stock,
     },
