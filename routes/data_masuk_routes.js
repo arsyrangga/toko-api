@@ -24,7 +24,7 @@ dataMasuk.delete("/data-masuk-delete/:id", (req, res) => {
     .catch((err) => res.status(404).json(err));
 });
 
-dataMask.put("/data-masuk-edit/:id", (req, res) => {
+dataMasuk.put("/data-masuk-edit/:id", (req, res) => {
   const id = req.params.id;
   DataMasuk.update(
     {
