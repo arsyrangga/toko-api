@@ -1,13 +1,13 @@
 ###
-GET http://toko-barokah.herokuapp.com/api/data-masuk
+GET http://toko-barokah.herokuapp.com/api/data-keluar
 Content-Type: application/json
 
 ###
-POST http://toko-barokah.herokuapp.com/api/data-masuk-post
+POST http://toko-barokah.herokuapp.com/api/data-keluar-post
 Content-Type: application/json
 
 {
-    "code" : "x31",
+    "code" : "x32",
     "tanggal" : "11/09/2002",
     "nama" : "Yonex Archsaber 11",
     "kategori" : "raket",
@@ -18,11 +18,11 @@ Content-Type: application/json
 }
 
 ###
-PUT http://toko-barokah.herokuapp.com/api/data-masuk-edit/1
+PUT http://toko-barokah.herokuapp.com/api/data-keluar-edit/1
 Content-Type: application/json
 
 {
-    "code" : "x31",
+    "code" : "x33",
     "tanggal" : "11/09/2007",
     "nama" : "Yonex Archsaber 11",
     "kategori" : "rakets",
@@ -33,5 +33,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://toko-barokah.herokuapp.com/api/data-return-delete/1
+DELETE  http://toko-barokah.herokuapp.com/api/data-keluar-delete/1
 Content-Type: application/

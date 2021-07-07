@@ -168,6 +168,10 @@ const DataMasuk = sequelize.define("/data-masuk", {
     type: DataTypes.DATEONLY,
     allowNull: false,
   },
+  nama: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   kategori: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -193,6 +197,10 @@ const DataKeluar = sequelize.define("/data-keluar", {
   },
   tanggal: {
     type: DataTypes.DATEONLY,
+    allowNull: false,
+  },
+  nama: {
+    type: DataTypes.STRING,
     allowNull: false,
   },
   kategori: {
