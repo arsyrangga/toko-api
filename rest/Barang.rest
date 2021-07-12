@@ -29,6 +29,7 @@ Content-Type: application/json
     "nama" : "Yonex Archsaber 11s",
     "kategori" : "rakest",
     "harga" : 3000020,
+    "merk" : "raket",
     "stock" : 620
 
 }

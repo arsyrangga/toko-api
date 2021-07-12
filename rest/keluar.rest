@@ -13,7 +13,8 @@ Content-Type: application/json
     "kategori" : "raket",
     "merk" : "Beat Saber",
     "harga" : 300000,
-    "stock" : 60
+    "stock" : 60,
+    "barang_id" : 1
 
 }
 
