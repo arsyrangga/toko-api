@@ -4,9 +4,9 @@ POST http://localhost:8000/api/login
 Content-Type: application/json
 
 {
-    "username" : "rangga",
-    "password" : "rangga105",
-    "nama" : "Rangga Arsy Prawira",
+    "username" : "siti",
+    "password" : "fauziah",
+    "nama" : "Siti Fauziah Indriani",
     "status" : "Aktif"
 }
 

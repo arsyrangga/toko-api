@@ -14,15 +14,15 @@ dataBarang.get("/data-barang", (req, res) => {
     include: [
       {
         model: DataMasuk,
-        attributes: ["stock"],
+        attributes: ["stock", "barang_id"],
       },
       {
         model: DataKeluar,
-        attributes: ["stock"],
+        attributes: ["stock", "barang_id"],
       },
       {
         model: DataReturn,
-        attributes: ["stock"],
+        attributes: ["stock", "barang_id"],
       },
     ],
   })
