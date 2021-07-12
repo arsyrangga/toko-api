@@ -214,6 +214,8 @@ const DataKeluar = sequelize.define("data-keluar", {
 DataBarang.hasMany(DataMasuk, {
   foreignKey: "barang_id",
   sourceKey: "id",
+  onDelete: "CASCADE",
+  onUpdate: "CASCADE",
 });
 
 DataMasuk.belongsTo(DataBarang, {
@@ -223,6 +225,8 @@ DataMasuk.belongsTo(DataBarang, {
 DataBarang.hasMany(DataKeluar, {
   foreignKey: "barang_id",
   sourceKey: "id",
+  onDelete: "CASCADE",
+  onUpdate: "CASCADE",
 });
 
 DataKeluar.belongsTo(DataBarang, {
@@ -232,6 +236,8 @@ DataKeluar.belongsTo(DataBarang, {
 DataBarang.hasMany(DataReturn, {
   foreignKey: "barang_id",
   sourceKey: "id",
+  onDelete: "CASCADE",
+  onUpdate: "CASCADE",
 });
 
 DataReturn.belongsTo(DataBarang, {
