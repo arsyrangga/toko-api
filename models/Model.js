@@ -112,7 +112,7 @@ const DataBarang = sequelize.define("data-barang", {
   },
 });
 
-const DataReturn = sequelize.define("data-return", {
+const DataReturn = sequelize.define("datareturn", {
   tanggal: {
     type: DataTypes.DATEONLY,
     allowNull: false,
@@ -139,7 +139,7 @@ const DataReturn = sequelize.define("data-return", {
   },
 });
 
-const DataMasuk = sequelize.define("data-masuk", {
+const DataMasuk = sequelize.define("datamasuk", {
   tanggal: {
     type: DataTypes.DATEONLY,
     allowNull: false,
@@ -166,7 +166,7 @@ const DataMasuk = sequelize.define("data-masuk", {
   },
 });
 
-const DataKeluar = sequelize.define("data-keluar", {
+const DataKeluar = sequelize.define("datakeluar", {
   tanggal: {
     type: DataTypes.DATEONLY,
     allowNull: false,
