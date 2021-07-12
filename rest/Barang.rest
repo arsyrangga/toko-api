@@ -41,10 +41,10 @@ POST http://localhost:8000/api/data-barang-post
 Content-Type: application/json
 
 {
-    "code" : "x31",
-    "nama" : "Yonex Archsaber 11",
+    "nama" : "Yonex Archsaber 11s",
     "kategori" : "raket",
-    "harga" : 300000,
+    "merk" : "yonex",
+    "harga" : 3000020
 
 }
 

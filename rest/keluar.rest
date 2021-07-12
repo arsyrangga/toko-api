@@ -45,7 +45,6 @@ POST http://localhost:8000/api/data-keluar-post
 Content-Type: application/json
 
 {
-    "code" : "x32",
     "tanggal" : "11/09/2002",
     "nama" : "Yonex Archsaber 11",
     "kategori" : "raket",

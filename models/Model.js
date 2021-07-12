@@ -70,16 +70,6 @@ const LoginAdmin = sequelize.define("login-admin", {
 });
 
 const DataBarang = sequelize.define("data-barang", {
-  code: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    validate: {
-      len: {
-        args: [1, 100],
-        msg: "masukkan data yang benar",
-      },
-    },
-  },
   nama: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -100,6 +90,16 @@ const DataBarang = sequelize.define("data-barang", {
       },
     },
   },
+  merk: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    validate: {
+      len: {
+        args: [2, 100],
+        msg: "Masukkan merk dengan benar",
+      },
+    },
+  },
   harga: {
     type: DataTypes.INTEGER,
     allowNull: false,
@@ -113,16 +113,6 @@ const DataBarang = sequelize.define("data-barang", {
 });
 
 const DataReturn = sequelize.define("data-return", {
-  code: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    validate: {
-      len: {
-        args: [1, 100],
-        msg: "masukkan data yang benar",
-      },
-    },
-  },
   tanggal: {
     type: DataTypes.DATEONLY,
     allowNull: false,
@@ -150,10 +140,6 @@ const DataReturn = sequelize.define("data-return", {
 });
 
 const DataMasuk = sequelize.define("data-masuk", {
-  code: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
   tanggal: {
     type: DataTypes.DATEONLY,
     allowNull: false,
@@ -181,10 +167,6 @@ const DataMasuk = sequelize.define("data-masuk", {
 });
 
 const DataKeluar = sequelize.define("data-keluar", {
-  code: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
   tanggal: {
     type: DataTypes.DATEONLY,
     allowNull: false,
