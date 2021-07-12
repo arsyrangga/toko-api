@@ -1,12 +1,30 @@
 const express = require("express");
-const { DataBarang } = require("../models/Model");
+const {
+  DataBarang,
+  DataKeluar,
+  DataMasuk,
+  DataReturn,
+} = require("../models/Model");
 
 const dataBarang = express.Router();
 
 // manampilkan semua data barang
 dataBarang.get("/data-barang", (req, res) => {
   DataBarang.findAll({
-    order: [["id", "DESC"]],
+    include: [
+      {
+        model: DataMasuk,
+        attributes: ["stock"],
+      },
+      {
+        model: DataKeluar,
+        attributes: ["stock"],
+      },
+      {
+        model: DataReturn,
+        attributes: ["stock"],
+      },
+    ],
   })
     .then((result) => res.status(200).json(result))
     .catch((err) => res.status(500).json(err));

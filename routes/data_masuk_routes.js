@@ -1,5 +1,5 @@
 const express = require("express");
-const { DataMasuk } = require("../models/Model");
+const { DataMasuk, DataKeluar, DataReturn } = require("../models/Model");
 const dataMasuk = express.Router();
 
 dataMasuk.get("/data-masuk", (req, res) => {

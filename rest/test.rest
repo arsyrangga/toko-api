@@ -4,9 +4,9 @@ POST http://localhost:8000/api/login
 Content-Type: application/json
 
 {
-    "username" : "rangga",
-    "password" : "rangga105",
-    "nama" : "Rangga Arsy Prawira",
+    "username" : "siti",
+    "password" : "fauziah",
+    "nama" : "Siti Fauziah Indriani",
     "status" : "Aktif"
 }
 
@@ -62,37 +62,3 @@ Content-Type: application/json
 GET http://localhost:8000/api/data-login-admin/admins
 Content-Type: application/json
 
-#liat semua data barang
-###
-GET http://toko-barokah.herokuapp.com/api/data-barang
-###
-POST http://toko-barokah.herokuapp.com/api/data-barang-post
-Content-Type: application/json
-
-{
-    "code" : "x31",
-    "nama" : "Yonex Archsaber 11",
-    "kategori" : "raket",
-    "harga" : 300000,
-    "stock" : 60
-
-}
-
-#Delete Data Barang
-###
-DELETE http://toko-barokah.herokuapp.com/api/data-barang-delete/3
-Content-Type: application/json
-
-# edit barang
-###
-PUT http://toko-barokah.herokuapp.com/api/data-barang-edit/3
-Content-Type: application/json
-
-{
-    "code" : "x25s",
-    "nama" : "Yonex Archsaber 11s",
-    "kategori" : "rakest",
-    "harga" : 3000020,
-    "stock" : 620
-
-}

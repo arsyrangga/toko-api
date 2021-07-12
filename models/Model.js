@@ -110,16 +110,6 @@ const DataBarang = sequelize.define("data-barang", {
       },
     },
   },
-  stock: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    validate: {
-      len: {
-        args: [1, 100],
-        msg: "masukkan Stock dengan benar",
-      },
-    },
-  },
 });
 
 const DataReturn = sequelize.define("data-return", {
@@ -159,7 +149,7 @@ const DataReturn = sequelize.define("data-return", {
   },
 });
 
-const DataMasuk = sequelize.define("/data-masuk", {
+const DataMasuk = sequelize.define("data-masuk", {
   code: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -190,7 +180,7 @@ const DataMasuk = sequelize.define("/data-masuk", {
   },
 });
 
-const DataKeluar = sequelize.define("/data-keluar", {
+const DataKeluar = sequelize.define("data-keluar", {
   code: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -219,6 +209,33 @@ const DataKeluar = sequelize.define("/data-keluar", {
     type: DataTypes.INTEGER,
     allowNull: false,
   },
+});
+
+DataBarang.hasMany(DataMasuk, {
+  foreignKey: "barang_id",
+  sourceKey: "id",
+});
+
+DataMasuk.belongsTo(DataBarang, {
+  foreignKey: "barang_id",
+});
+
+DataBarang.hasMany(DataKeluar, {
+  foreignKey: "barang_id",
+  sourceKey: "id",
+});
+
+DataKeluar.belongsTo(DataBarang, {
+  foreignKey: "barang_id",
+});
+
+DataBarang.hasMany(DataReturn, {
+  foreignKey: "barang_id",
+  sourceKey: "id",
+});
+
+DataReturn.belongsTo(DataBarang, {
+  foreignKey: "barang_id",
 });
 
 module.exports = {

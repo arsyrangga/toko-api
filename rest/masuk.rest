@@ -7,7 +7,7 @@ POST http://toko-barokah.herokuapp.com/api/data-masuk-post
 Content-Type: application/json
 
 {
-    "code" : "x31",
+    "code" : "x32",
     "tanggal" : "11/09/2002",
     "nama" : "Yonex Archsaber 11",
     "kategori" : "raket",
@@ -35,3 +35,24 @@ Content-Type: application/json
 ###
 DELETE  http://toko-barokah.herokuapp.com/api/data-return-delete/1
 Content-Type: application/
+
+
+###
+GET http://localhost:8000/api/data-masuk
+Content-Type: application/json
+
+###
+POST http://localhost:8000/api/data-masuk-post
+Content-Type: application/json
+
+{
+    "code" : "x32",
+    "tanggal" : "11/09/2002",
+    "nama" : "Yonex Archsaber 11",
+    "kategori" : "raket",
+    "merk" : "Beat Saber",
+    "harga" : 300000,
+    "stock" : 60,
+    "barang_id" : 1
+
+}
