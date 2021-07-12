@@ -52,9 +52,11 @@ dataBarang.put("/data-barang-edit/:id", (req, res) => {
   const id = req.params.id;
   DataBarang.update(
     {
-      code: req.body.code,
+      id: req.body.id,
+      barang_id: req.body.barang_id,
       nama: req.body.nama,
       kategori: req.body.kategori,
+      merk: req.body.merk,
       harga: req.body.harga,
       stock: req.body.stock,
     },
