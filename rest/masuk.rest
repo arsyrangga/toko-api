@@ -12,7 +12,7 @@ Content-Type: application/json
     "kategori" : "raket",
     "merk" : "Beat Saber",
     "harga" : 300000,
-    "stock" : 60,
+    "stock" : 61,
     "barang_id" : 1
 
 
@@ -36,7 +36,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://toko-barokah.herokuapp.com/api/data-return-delete/1
+DELETE  http://toko-barokah.herokuapp.com/api/data-return-delete/4
 Content-Type: application/
 
 
@@ -54,7 +54,11 @@ Content-Type: application/json
     "kategori" : "raket",
     "merk" : "Beat Saber",
     "harga" : 300000,
-    "stock" : 60,
+    "stock" : 61,
     "barang_id" : 1
 
 }
+
+###
+DELETE  http://localhost:8000/api/data-masuk-delete/4
+Content-Type: application/

@@ -9,6 +9,7 @@ Content-Type: application/json
     "code" : "x31",
     "nama" : "Yonex Archsaber 11",
     "kategori" : "raket",
+    "merk" : "yonex",
     "harga" : 300000,
     "stock" : 60
 
@@ -46,7 +47,6 @@ Content-Type: application/json
     "kategori" : "raket",
     "merk" : "yonex",
     "harga" : 3000020
-
 }
 
 #Delete Data Barang
