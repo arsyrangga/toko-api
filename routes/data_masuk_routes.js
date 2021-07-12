@@ -28,7 +28,7 @@ dataMasuk.put("/data-masuk-edit/:id", (req, res) => {
   const id = req.params.id;
   DataMasuk.update(
     {
-      code: req.body.code,
+      barang_id: req.body.barang_id,
       tanggal: req.body.tanggal,
       nama: req.body.nama,
       kategori: req.body.kategori,

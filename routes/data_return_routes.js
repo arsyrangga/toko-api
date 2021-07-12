@@ -29,7 +29,7 @@ dataReturn.put("/data-return-edit/:id", (req, res) => {
   const id = req.params.id;
   DataReturn.update(
     {
-      code: req.body.code,
+      barang_id: req.body.barang_id,
       tanggal: req.body.tanggal,
       nama: req.body.nama,
       kategori: req.body.kategori,
