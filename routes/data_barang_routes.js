@@ -30,6 +30,17 @@ dataBarang.get("/data-barang", (req, res) => {
     .catch((err) => res.status(500).json(err));
 });
 
+dataBarang.get("/data-barang/:id", (req, res) => {
+  const id = req.params.id;
+  DataBarang.findOne({
+    where: {
+      id: id,
+    },
+  })
+    .then((result) => res.status(200).json(result))
+    .catch((err) => res.status(500).json(err));
+});
+
 // POST BARANG
 dataBarang.post("/data-barang-post", (req, res) => {
   const body = req.body;
