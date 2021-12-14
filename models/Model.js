@@ -95,7 +95,7 @@ const DataBarang = sequelize.define("data-barang", {
     allowNull: false,
     validate: {
       len: {
-        args: [2, 100],
+        args: [1, 100],
         msg: "Masukkan merk dengan benar",
       },
     },
